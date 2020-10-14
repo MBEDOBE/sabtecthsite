@@ -69,7 +69,8 @@
             <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact" />
         </div>
 
-        <form id="contact-form" method="post" action="https://script.google.com/macros/s/AKfycbwkYLWlwO0o_9gDEjV-1ny8rRkukQqgJAZfT7KiiQ/exec" >
+        <form id="contact-form" method="post"
+            action="https://script.google.com/macros/s/AKfycbwkYLWlwO0o_9gDEjV-1ny8rRkukQqgJAZfT7KiiQ/exec">
             <h3>Send Us a Message</h3>
             <div class="row">
                 <div class="col-md-6">
@@ -93,9 +94,18 @@
 
             </div>
 
+            <!-- Customise the Thankyou Message People See when they submit the form: -->
+            <div class="thankyou_message" style="display:none;">
+                <h2><em>Thanks</em> for contacting us!
+                    We will get back to you soon!</h2>
+            </div>
+
         </form>
 
-        
+        <!-- Submit the Form to Google Using "AJAX" -->
+        <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+        <!-- END -->
+
 
 
 
