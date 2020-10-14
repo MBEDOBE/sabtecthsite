@@ -69,7 +69,7 @@
             <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact" />
         </div>
 
-        <form id="contact-form" method="post" name="google-sheet">
+        <form id="contact-form" method="post" action="https://script.google.com/macros/s/AKfycbwkYLWlwO0o_9gDEjV-1ny8rRkukQqgJAZfT7KiiQ/exec" >
             <h3>Send Us a Message</h3>
             <div class="row">
                 <div class="col-md-6">
@@ -95,17 +95,7 @@
 
         </form>
 
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbwkUUNfIJEsgWVpP9uUIDCIM1r7On9TsCdMUXYfBXB0wgrpohA/exec'
-            const form = document.forms['google-sheet']
-
-            form.addEventListener('submit', e => {
-                e.preventDefault()
-                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                    .then(response => alert("Thank You for Contacting us..! We Get Back To You Soon..."))
-                    .catch(error => console.error('Error!', error.message))
-            })
-        </script>
+        
 
 
 
